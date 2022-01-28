@@ -18,7 +18,7 @@ def submit():
         e1 = (int(guessE.get()))
         if e1 == bot:
             messagebox.showinfo("Game Over", f"The number was {e1}, congratulations!")
-            break
+            window.destroy()
             
         elif e1 != bot:
             print("Try again")
