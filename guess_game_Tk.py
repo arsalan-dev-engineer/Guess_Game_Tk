@@ -18,6 +18,8 @@ def submit():
         e1 = (int(guessE.get()))
         if e1 == bot:
             messagebox.showinfo("Game Over", f"The number was {e1}, congratulations!")
+            guessE.configure(state="disabled")
+            submitBtn.configure(state="disabled")
             break
             
         elif e1 != bot:
