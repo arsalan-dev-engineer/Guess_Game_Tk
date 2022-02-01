@@ -32,7 +32,7 @@ def submit():
         print("No more tries left")
         guessE.configure(state="disabled")
         submitBtn.configure(state="disabled")
-        over = messagebox.showerror("Game Over", f"The number was {e1}\nThank you for playing!")
+        over = messagebox.showerror("Game Over", f"The number was {bot}\nThank you for playing!")
         window.destroy()
         
 
